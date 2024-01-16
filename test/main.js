@@ -29,17 +29,17 @@ describe('DOM', () => {
 	});
 
 	it("should be able to return element attribute data via 'createElementAttribute' function", () => {
-		const srcData = createElementAttribute(
+		const hrefData = createElementAttribute(
 			'href',
 			'https://www.frontendmentor.io?ref=challenge'
 		);
 
-		const expectedSrcData = {
+		const expectedHrefData = {
 			name: 'href',
 			value: 'https://www.frontendmentor.io?ref=challenge',
 		};
 
-		assert.deepEqual(srcData, expectedSrcData);
+		assert.deepEqual(hrefData, expectedHrefData);
 	});
 
 	it("should be able to create header element via 'createHeaderEl' function", () => {
